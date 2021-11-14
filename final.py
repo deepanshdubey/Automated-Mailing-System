@@ -62,7 +62,7 @@ label2=Label(bottom_frame, text="BODY FOR THE MAIL", font=("Times New Roman",15)
 
 body=StringVar()
 email_body_entry=Entry(bottom_frame,textvariable=body,width=70, highlightthickness=1)
-email_body_entry.pack()
+email_body_entry.pack(ipady=3)
 button=Button(bottom_frame,text='SEND MESSAGE', font=("Arial Hebrew",10),bg='grey',height='2',width='10', command=send_message).pack(ipadx=20,pady=40)
 
 window.mainloop()
